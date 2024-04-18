@@ -99,7 +99,7 @@ colnames(brd_species.names) <- c('Domain', 'Phylum', 'Class', 'Order', 'Family',
 brd_species.names <- as.matrix(brd_species.names)
 
 #load metadata
-brd_meta <- read.csv('./microbiome/data/broad_metadata.csv')
+brd_meta <- read.csv('broad_metadata.csv')
 rownames(brd_meta) <- brd_meta$Sample_ID
 brd_meta$status_fixed <- as.factor(as.character(brd_meta$status_fixed))
 
